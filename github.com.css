@@ -1,0 +1,200 @@
+@-moz-document domain(github.com)
+{
+	body {
+		color: #000;
+	}
+	body .mb-1 {
+		margin-bottom: 0;
+	}
+	body .mb-2 {
+		margin-bottom: 0;
+	}
+	.Box {
+		border-radius: 0;
+	}
+	.Box-header {
+		padding: 2px 16px;
+		border-radius: 0;
+	}
+	.flash {
+		border-radius: 0;
+	}
+	.btn {
+		color: #000;
+		background-color: #eff3f6;
+		border-radius: 0;
+	}
+	.BtnGroup-form:first-child, .BtnGroup-parent:first-child {
+		border-radius: 0;
+	}
+	.BtnGroup-form:last-child, .BtnGroup-parent:last-child {
+		border-radius: 0;
+	}
+	.social-count {
+		border-radius: 0;
+	}
+	.Counter {
+		background-color: transparent;
+		border-radius: 0;
+	}
+	.Counter::before {
+		content: '(';
+	}
+	.Counter::after {
+		content: ')';
+	}
+	.Header {
+		padding: 0;
+	}
+	/* header stuff */
+	.pagehead {
+		margin-bottom: .4em;
+		padding-top: .4em;
+		border-bottom: 1px solid #000;
+	}
+	.repohead .repohead-details-container {
+		margin-bottom: .6em;
+	}
+	h1.private .Label {
+		background-color: #fcfc91;
+		border: 1px solid #ccc;
+	}
+	/* nav */
+	.reponav .reponav-item {
+		border-radius: 0;
+		color: #000;
+		border: 1px solid #000;
+		border-bottom: 0;
+		margin: 0 .3em 1px 0;
+	}
+	.reponav .reponav-item.selected {
+		background-color: #d5d5d5;
+		color: #000;
+	}
+	/* topics */
+	.list-topics-container .topic-tag {
+		background-color: #a7d3ff;
+		border-radius: 0;
+		padding: 0 .7em;
+		color: #0366d6;
+		border: 1px solid #0366d6;
+	}
+	/* overview*/
+	.repository-content .overall-summary {
+		border-radius: 0;
+	}
+	.repository-content .stats-switcher-viewport {
+		height: auto;
+	}
+	.repository-content .numbers-summary a {
+		padding: 1px 0;
+		color: #000;
+	}
+	.repository-content .repository-lang-stats li {
+		padding: 0;
+	}
+	.repository-lang-stats-graph {
+		border-radius: 0;
+	}
+	.repository-lang-stats-graph .language-color:first-child {
+		border-radius: 0;
+	}
+	.repository-lang-stats-graph .language-color:last-child {
+		border-radius: 0;
+	}
+	/* last commit*/
+	.commit-tease {
+		padding: 1px 10px;
+		border-radius: 0 !important!;
+	}
+	.commit-tease .avatar {
+		margin-top: 2px;
+	}
+	.commit-tease .AvatarStack-body .avatar {
+		height: auto;
+		width: auto;
+	}
+	/* files */
+	table.files td {
+		border-top: 1px solid #f2f2f2;
+		padding: 0 3px;
+	}
+	table.files {
+		border-radius: 0;
+	}
+	.file-wrap {
+		border-radius: 0;
+	}
+	/* issues */
+	.table-list-header {
+		broder-radius: 0;
+	}
+	.table-list-header .btn-link {
+		padding-top: .1em;
+		padding-bottom: .1em;
+	}
+	.issues-listing label {
+		padding: 0;
+	}
+	.issues-table div.d-table {
+		padding-top: .2em;
+		padding-bottom: .2em;
+	}
+	.issues-table a.h4 {
+		font-weight: normal;
+		font-size: 1em;
+	}
+	.issues-table .text-small {
+		font-size: .8em;
+		margin-top: 0;
+	}
+	.issues-table .text-small .text-gray {
+		color: #a9b2bc;
+	}
+	.issues-table .text-small .text-gray a {
+		color: #a9b2bc;
+	}
+	.IssueLabel {
+		border-radius: 0;
+		box-shadow: none;
+		height: auto;
+		border: 1px solid #000;
+		padding: 0 2px;
+	}
+	/* projects */
+	.project-header {
+		padding: .2em 1em 0 1em;
+	}
+	.project-columns-container {
+		padding: 0 .5em 0 .5em;
+	}
+	.project-column {
+		border-radius: 0;
+		margin-right: 5px;
+		border: 1px solid #000;
+	}
+	.project-column .details-container div {
+		padding: .1em .5em;
+		border-bottom: 1px solid #000;
+	}
+	.project-column .js-project-column-cards {
+		padding: 0;
+	}
+	.project-card, .project-card:hover {
+		border: 0;
+		border-bottom: 1px solid #000;
+		border-radius: 0;
+		padding: 0 0 .1em 0;
+		margin: 0;
+	}
+	.project-card .flex-row .flex-auto div.mr-4 {
+		padding: 2px 0 0 0;
+	}
+	.project-card .flex-row .flex-auto div p {
+		margin: 0;
+	}
+	.card-octicon, .card-note-octicon {
+		left: 3px;
+		top: 2px;
+	}
+}

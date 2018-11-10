@@ -1,0 +1,36 @@
+@-moz-document domain(discordapp.com)
+{
+	div[class*="messages-"].scroller div[class*="containerCompactBounded-"] {
+		padding: 2px 0;
+	}
+	#app-mount div.app.theme-light div[class*="markup-"] {
+		color: #000;
+	}
+	div[class*="channelTextArea-"] {
+		padding: 0;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		border: 0;
+	}
+	div[class*="channelTextArea-"] > div[class*="inner-"] {
+		border-radius: 0;
+		background-color: #eee;
+	}
+	div[class*="channelTextArea-"] div[class*="attachButton-"] {
+		padding: 0 3px;
+	}
+	#app-mount div.app.theme-light div[class*="textArea-"] {
+		color: #000;
+	}
+	div[class*="channels-"] div[class*="wrapper-"] {
+		height: 24px;
+	}
+	div[class*="channels-"] div[class*="content-"] {
+		margin: 0;
+		border-radius: 0;
+		height: 24px;
+	}
+	div[class*="channels-"] div[class*="content-"] div[class*="name"] {
+		line-height: 24px;
+	}
+}
