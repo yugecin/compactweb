@@ -1,0 +1,294 @@
+@-moz-document domain(atlassian.net)
+{
+	#jira * {
+		transition: none;
+		box-shadow: none;
+	}
+/*nav*/
+/*nav bar*/
+	#jira #navigation-app > div > div > div > span > div {
+		padding-top: 0;
+		padding-bottom: 0;
+		width: auto;
+		border-right: 1px solid #deebff;
+	}
+	/*make the hover effect on buttons a square*/
+	#jira #navigation-app > div > div > div > span > div > div > span:hover,
+	#jira #navigation-app > div > div > div > span > div > div > div:hover {
+		/*switch icon is a span instead of div for some reason...*/
+		background: #525252;
+		width: 100%;
+	}
+	#jira #navigation-app > div > div > div > span > div > div > span:hover > *,
+	#jira #navigation-app > div > div > div > span > div > div > div:hover > * {
+		background: #525252;
+	}
+/*nav vertical items right*/
+	/*excessive logo/nav items padding*/
+	#jira #navigation-app > div > div > div > div:last-child > div > div > div::first-child > div > div,
+	#jira #navigation-app > div > div > div > div:last-child > div > div > div::first-child + div > div > div > div {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/*nav items border radius*/
+	#jira #navigation-app > div > div > div > div:last-child > div > div::first-child + div > div > div > div > div > div > a {
+		border-radius: 0;
+	}
+/*content*/
+	#jira #content {
+		margin-left: 5px;
+		margin-right: 0;
+	}
+/*dashboard*/
+	#dashboard-content > aui-page-header {
+		padding-top: 0;
+		padding-bottom: 1em;
+	}
+/*dashboard card*/
+	.dashboard-item-frame.gadget-container {
+		box-shadow: none;
+		border: 1px solid #000;
+		border-radius: 0;
+	}
+	.dashboard-item-frame.gadget-container .dashboard-item-header .dashboard-item-title {
+		padding: .5em;
+		margin: 0;
+		border: 0;
+		border-bottom: 1px solid #000;
+		background: #99f;
+		color: #000;
+	}
+	.gadget-menu ul {
+		margin: 0;
+	}
+	.gadget-menu ul li {
+		margin: 0;
+		border: 1px solid #000;
+		height: 1.5em;
+	}
+	.gadget-menu ul li a {
+		min-width: auto;
+		height: 100%;
+		line-height: 100%;
+		border-radius: 0;
+		margin: 0;
+		padding-right: 1.2em;
+		display:block;
+		background: #eee;
+	}
+	.gadget-menu ul li a:hover {
+		background: #f0f0f0;
+	}
+	.gadget-menu ul li a span {
+		top: 0;
+		margin-top: 0;
+		line-height: 1em;
+	}
+	.dashboard-item-frame.gadget-container .dashboard-item-content {
+		padding: 0;
+		color: #000;
+	}
+	tr.issuerow td {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+/*backlog*/
+	#breadcrumbs-container {
+		margin: 0;
+	}
+	#gh {
+		/*idk...*/
+		width: calc(100% - 50px);
+	}
+	.ghx-header {
+		padding: 0;
+		margin: 0;
+	}
+	.ghx-quick-filters {
+		margin: 0;
+	}
+	.ghx-backlog-container {
+		border: 1px solid #000;
+	}
+	.ghx-backlog-header {
+		margin: 0;
+		background: #fef;
+	}
+	.ghx-backlog-header .ghx-sprint-info {
+		position: absolute;
+		left: 50%;
+		width: auto;
+		float: none;
+	}
+	.ghx-assigned-work-stats {
+		padding: 0 20px;
+		border-top: 1px solid #000;
+	}
+	.ghx-assigned-work-stats .ghx-avatar-img {
+		font-size: 14px;
+		height: 16px;
+		line-height: 16px;
+		width: 16px;
+		margin: 5px 5px 5px 0;
+	}
+	.ghx-issues {
+		padding: 0;
+		margin: 0;
+	}
+	.ghx-issue-compact {
+		border-top: 1px solid #ddd;
+	}
+	.ghx-issue-compact:first-child {
+		border-top: 1px solid #000;
+	}
+	.ghx-issue-compact .ghx-row {
+		height: 26px;
+		margin: 0;
+	}
+	.ghx-issue-content span.ghx-type {
+		width: 40px;
+		height: 26px;
+		display: inline-block;
+		padding: 0 .4em 0 .3em;;
+	}
+	.ghx-issue-content span.ghx-type img {
+		display: none;
+	}
+	.ghx-issue-content span.ghx-type::before {
+		content: '???'
+	}
+	.ghx-issue-content span.ghx-type {
+		background: #d5d5d5;
+	}
+	.ghx-issue-content span.ghx-type[title="Story"]::before {
+		content: 'Story'
+	}
+	.ghx-issue-content span.ghx-type[title="Story"] {
+		background: #63BA3C;
+	}
+	.ghx-issue-content span.ghx-type[title="Bug"]::before {
+		content: 'Bug'
+	}
+	.ghx-issue-content span.ghx-type[title="Bug"] {
+		background: #E5493A;
+	}
+	.ghx-issue-content span.ghx-type[title="Task"]::before {
+		content: 'Task'
+	}
+	.ghx-issue-content span.ghx-type[title="Task"] {
+		background: #4BADE8;
+	}
+	.ghx-row > span.ghx-backlog-card-expander-spacer:first-child {
+		width: 0px;
+	}
+	.ghx-issue-compact .ghx-end {
+		padding: 0 5px;
+	}
+	.ghx-issues > div.iic > div > button {
+		padding: 0;
+		margin: 0;
+		min-height: 0;
+		height: auto;
+	}
+	.ghx-marker,
+	.ghx-backlog-container > .ghx-meta > .ghx-marker {
+		height: auto;
+		margin: 0;
+	}
+/*issue*/
+	#issuedetails {
+		color: #000 !important;
+	}
+	#issuedetails .item strong {
+		color: #000 !important;
+	}
+/*issue comments*/
+	.issue-data-block {
+		padding: 0;
+		border-top: 1px solid #000;
+		border-radius: 0;
+	}
+	.issue-data-block .action-details {
+		margin: 0;
+	}
+	.issue-data-block .action-details .user-avatar {
+		padding: 0 0 0 32px;
+	}
+	.issue-data-block .action-details .user-avatar > span,
+	.issue-data-block .action-details .user-avatar > span > span,
+	.issue-data-block .action-details .user-avatar > span > span > img {
+		width: 18px;
+		height: 18px;
+	}
+/*various*/
+	.progressbar-container {
+		border: 1px solid #000;
+		height: 12px;
+	}
+	.progressbar-container .progressbar-progress {
+		height: 12px;
+	}
+	.aui-button {
+		border-radius: 0;
+		border: 1px solid #000;
+		background: #eee;
+		color: #000;
+		box-shadow: none;
+		padding: 0 .5em;
+		height: 1.5em;
+		min-width: auto;
+	}
+	.aui-button:hover {
+		color: #000;
+		background: #f0f0f0;
+	}
+	.aui-button:active {
+		color: #000;
+	}
+/*dropdown*/
+	.aui-dropdown2,
+	.ajs-layer[style*="top"] {
+		margin: 0;
+		box-shadow: none;
+		border: 1px solid #000;
+	}
+	.aui-dropdown2, .aui-list,
+	.ajs-layer[style*="top"] .aui-list {
+		padding: 0;
+		box-shadow: none;
+	}
+	.aui-dropdown2, .aui-list ul.aui-list-section,
+	.ajs-layer[style*="top"] .aui-list ul.aui-list-section {
+		padding: 0;
+	}
+	.aui-dropdown2, .aui-list ul.aui-list-section:not(:first-child),
+	.ajs-layer[style*="top"] .aui-list ul.aui-list-section:not(:first-child) {
+		border-top: 1px solid #000;
+	}
+	.aui-dropdown2, .aui-list ul.aui-list-section li a,
+	.ajs-layer[style*="top"] .aui-list ul.aui-list-section li a {
+		padding: 2px 12px;
+	}
+/*dropdown2*/
+	#tools-dropdown-items {
+		border-radius: 0;
+		box-shadow: none;
+		border: 1px solid #000;
+		background: #eee;
+		color: #000;
+	}
+	#tools-dropdown-items ul,
+	#tools-dropdown-items ul:hover {
+		background: #f0f0f0;
+	}
+	#tools-dropdown-items ul li {
+		background: #eee;
+	}
+	#tools-dropdown-items ul li:hover {
+		background: #f0f0f0;
+	}
+	#tools-dropdown-items ul li a,
+	.aui-dropdown2.aui-style-default a {
+		color: #000;
+	}
+}
