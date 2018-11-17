@@ -72,12 +72,15 @@
 		color: #000;
 	}
 	/* topics */
-	.list-topics-container .topic-tag {
+	/*pull request branchnames*/.commit-ref,
+	/*userpage,organisationpage*/.topics-row-container .topic-tag,
+	/*repopage*/.list-topics-container .topic-tag {
 		background-color: #a7d3ff;
 		border-radius: 0;
 		padding: 0 .7em;
 		color: #0366d6;
 		border: 1px solid #0366d6;
+		line-height: 1.4em;
 	}
 	/* overview*/
 	.repository-content .overall-summary {
@@ -106,13 +109,19 @@
 	.commit-tease {
 		padding: 1px 10px;
 		border-radius: 0 !important!;
+		border-top-left-radius: 0 !important!;
+		border-top-right-radius: 0 !important!;
 	}
 	.commit-tease .avatar {
 		margin-top: 2px;
+		border-radius: 0 !important!;
 	}
 	.commit-tease .AvatarStack-body .avatar {
-		height: auto;
-		width: auto;
+		height: 20px;
+		width: 20px;
+	}
+	.AvatarStack-body .avatar img {
+		border-radius: 0 !important!;
 	}
 	/* files */
 	table.files td {
@@ -196,5 +205,16 @@
 	.card-octicon, .card-note-octicon {
 		left: 3px;
 		top: 2px;
+	}
+	/*stuff*/
+	.markdown-body pre {
+		padding: .1em;
+		border: 1px solid #c1c3c5;
+		border-radius: 0;
+		white-space: pre-wrap;
+	}
+	.markdown-body pre code {
+		border-radius: 0;
+		white-space: pre-wrap;
 	}
 }
