@@ -9,7 +9,7 @@
 	div[class*="channelTextArea-"] {
 		padding: 0;
 		margin-top: 5px;
-		margin-bottom: 5px;
+		/*margin-bottom: 5px;*/
 		border: 0;
 	}
 	div[class*="channelTextArea-"] > div[class*="inner-"] {
