@@ -100,15 +100,28 @@
 		/*idk...*/
 		width: calc(100% - 50px);
 	}
-	.ghx-header {
+	#ghx-quick-filters {
+		margin-bottom: 5px;
+	}
+	#ghx-header {
 		padding: 0;
 		margin: 0;
 	}
-	.ghx-quick-filters {
+	#breadcrumbs-container {
+		font-size: .8em;
+	}
+	#ghx-top-header h1 {
+		font-size:  1.4em;
+	}
+	#ghx-quick-filters {
 		margin: 0;
 	}
 	.ghx-backlog-container {
 		border: 1px solid #000;
+	}
+	#ghx-backlog-column {
+		padding-top: 0px;
+		border-top: 1px solid #000;
 	}
 	.ghx-backlog-header {
 		margin: 0;
