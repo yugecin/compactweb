@@ -240,6 +240,9 @@
 		content: 'Low';
 		color: #2A8735;
 	}
+	.ghx-issue-content .ghx-key {
+		color: #000;
+	}
 /*issue*/
 	#issuedetails {
 		color: #000 !important;
