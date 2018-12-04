@@ -208,6 +208,9 @@
 		height: auto;
 		margin: 0;
 	}
+	div.ghx-issue-compact.ghx-done div.ghx-summary {
+		text-decoration: line-through;
+	}
 /*issue*/
 	#issuedetails {
 		color: #000 !important;
