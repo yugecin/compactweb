@@ -243,6 +243,87 @@
 	.ghx-issue-content .ghx-key {
 		color: #000;
 	}
+/*agile board*/
+	.ghx-work .ghx-column {
+		padding: 0;
+		border-radius: 0;
+		border: 1px solid #000;
+	}
+	.ghx-work .ghx-column-headers .ghx-column {
+		padding: 0 1em;
+	}
+	.ghx-work .ghx-column div.ghx-issue {
+		margin: 0;
+		padding: 0 .7em;
+		border-bottom: 1px solid #000;
+		border-radius: 0;
+	}
+	.ghx-work .ghx-column div.ghx-issue:last-child {
+		/* hide double border */
+		margin-bottom: -1px;
+	}
+	.ghx-work .ghx-parent-group {
+		margin: 0;
+	}
+	.ghx-work .ghx-column .ghx-key,
+	.ghx-work .ghx-column .ghx-key .ghx-issuekey-pkey,
+	.ghx-work .ghx-column .ghx-key .ghx-issuekey-pnumber {
+		color: #000;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Bug"] img {
+		display: none;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Bug"]::before {
+		content: 'Bug';
+		background: #E5493A;
+		display: inline-block;
+		padding: 0 .4em;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Story"] img {
+		display: none;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Story"]::before {
+		content: 'Story';
+		background: #63BA3C;
+		display: inline-block;
+		padding: 0 .4em;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Task"] img {
+		display: none;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Task"]::before {
+		content: 'Task';
+		background: #4BADE8;
+		display: inline-block;
+		padding: 0 .4em;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Highest priority"] img {
+		display: none;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Highest priority"]::before {
+		content: 'Highest';
+		color: #EA4444;
+		font-weight: bold;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="High priority"] img {
+		display: none;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="High priority"]::before {
+		content: 'High';
+		color: #EA7D24;
+		font-weight: bold;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Medium priority"] {
+		display:none;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Low priority"] img {
+		display: none;
+	}
+	.ghx-work .ghx-column .ghx-field.ghx-field-icon[data-tooltip="Low priority"]::before {
+		content: 'Low';
+		color: #2A8735;
+		font-weight: bold;
+	}
 /*issue*/
 	#issuedetails {
 		color: #000 !important;
