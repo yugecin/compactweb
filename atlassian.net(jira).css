@@ -162,31 +162,31 @@
 		width: 40px;
 		height: 26px;
 		display: inline-block;
-		padding: 0 .4em 0 .3em;;
+		padding: 0 .4em 0 .3em;
 	}
 	.ghx-issue-content span.ghx-type img {
 		display: none;
 	}
 	.ghx-issue-content span.ghx-type::before {
-		content: '???'
+		content: '???';
 	}
 	.ghx-issue-content span.ghx-type {
 		background: #d5d5d5;
 	}
 	.ghx-issue-content span.ghx-type[title="Story"]::before {
-		content: 'Story'
+		content: 'Story';
 	}
 	.ghx-issue-content span.ghx-type[title="Story"] {
 		background: #63BA3C;
 	}
 	.ghx-issue-content span.ghx-type[title="Bug"]::before {
-		content: 'Bug'
+		content: 'Bug';
 	}
 	.ghx-issue-content span.ghx-type[title="Bug"] {
 		background: #E5493A;
 	}
 	.ghx-issue-content span.ghx-type[title="Task"]::before {
-		content: 'Task'
+		content: 'Task';
 	}
 	.ghx-issue-content span.ghx-type[title="Task"] {
 		background: #4BADE8;
@@ -208,8 +208,37 @@
 		height: auto;
 		margin: 0;
 	}
+	div.ghx-issue-compact.ghx-done span.ghx-priority::before,
+	div.ghx-issue-compact.ghx-done span.ghx-type::before,
 	div.ghx-issue-compact.ghx-done div.ghx-summary {
 		text-decoration: line-through;
+	}
+	.ghx-issue-content span.ghx-priority img {
+		display: none;
+	}
+	.ghx-issue-content span.ghx-priority::before {
+		content: '?priority?';
+		color: #d5d5d5;
+		font-weight: bold;
+	}
+	.ghx-issue-content span.ghx-priority[title="Highest"]::before {
+		content: 'Highest';
+		color: #EA4444;
+	}
+	.ghx-issue-content span.ghx-priority[title="High"]::before {
+		content: 'High';
+		/*color: #EA4444;*/
+		color: #EA7D24;
+	}
+	.ghx-issue-content span.ghx-priority[title="Medium"]::before {
+		/*content: 'Medium';*/
+		content: '';
+		/*color: #EA7D24;*/
+		/*color: #F7A35D;*/
+	}
+	.ghx-issue-content span.ghx-priority[title="Low"]::before {
+		content: 'Low';
+		color: #2A8735;
 	}
 /*issue*/
 	#issuedetails {
