@@ -25,13 +25,13 @@
 	}
 /*nav vertical items right*/
 	/*excessive logo/nav items padding*/
-	#jira #navigation-app > div > div > div > div:last-child > div > div > div::first-child > div > div,
-	#jira #navigation-app > div > div > div > div:last-child > div > div > div::first-child + div > div > div > div {
+	#jira #navigation-app > div > div > div > div:last-child > div > div > div:first-child > div > div,
+	#jira #navigation-app > div > div > div > div:last-child > div > div > div:first-child + div > div > div > div {
 		padding-left: 0;
 		padding-right: 0;
 	}
 	/*nav items border radius*/
-	#jira #navigation-app > div > div > div > div:last-child > div > div::first-child + div > div > div > div > div > div > a {
+	#jira #navigation-app > div > div > div > div:last-child > div > div:first-child + div > div > div > div > div > div > a {
 		border-radius: 0;
 	}
 /*content*/
