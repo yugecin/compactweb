@@ -1,36 +1,75 @@
 @-moz-document domain(discordapp.com)
 {
-	div[class*="messages-"].scroller div[class*="containerCompactBounded-"] {
-		padding: 2px 0;
+/* chats */
+	/* chat messages container with INSANE PADDING WTF UX TEAM? */
+	div[class*="messagesWrapper-"] div[class*="containerCompactBounded-"] {
+		padding: 1px 0;
 	}
-	#app-mount div.app.theme-light div[class*="markup-"] {
+	/* day separators and stuff */
+	span[class*="dividerContent-"] {
+		border-color: #aaa;
+		color: #aaa;
+	}
+	/* actual chat messages */
+	div.theme-light div[class*="markup-"] {
 		color: #000;
 	}
-	div[class*="channelTextArea-"] {
-		padding: 0;
-		margin-top: 5px;
-		/*margin-bottom: 5px;*/
-		border: 0;
+	/* sender of actual chat messages */
+	.theme-light span[class*="username-"][role="button"] {
+		color: #444; /* not completely clack because bold */
+		font-weight: bold;
 	}
-	div[class*="channelTextArea-"] > div[class*="inner-"] {
-		border-radius: 0;
-		background-color: #eee;
-	}
-	div[class*="channelTextArea-"] div[class*="attachButton-"] {
-		padding: 0 3px;
-	}
-	#app-mount div.app.theme-light div[class*="textArea-"] {
+
+
+/* channellist*/
+	/* not messing with heights because scrolling... it would not display elements */
+
+/* userlist */
+	/* membergroups AGAIN WITH INSANE PADDING WHO DESIGNED THIS??? */
+	div[class*="membersWrap-"] div[class*="membersGroup-"] {
 		color: #000;
+		background: #ddd;
+		padding: 5px 0 5px 13px;
+		height: unset;
+		line-height: unset;
+		letter-spacing: unset;
 	}
-	div[class*="channels-"] div[class*="wrapper-"] {
-		height: 24px;
+	div[class*="memberOnline-"] div[class*="member-"] {
+		height: 38px;
 	}
-	div[class*="channels-"] div[class*="content-"] {
+	#app-mount .theme-light div[class*="memberOnline-"] {
+		color: #000 /* no semicolon to prevent adding !important, because group colors */
+	}
+
+
+/* private area */
+	/* some weird padding at the right side of private channels list, */
+	/* where the scrollbar is but much wider than the scrollbar */
+	div[class*="systemPad-"] {
+		padding-right: 8px; /* was 17px */
+	}
+	/* compact top buttons in private channels (activity, library, store, friends) */
+	div[class*="privateChannels-"] div[class*="searchBar-"] + div > div > div[class*="channel-"]:nth-child(-n+5) {
+		height: unset;
+	}
+	div[class*="privateChannels-"] div[class*="searchBar-"] + div > div > div[class*="channel-"]:nth-child(-n+5) a {
+		height: unset;
+	}
+	div[class*="privateChannels-"] div[class*="searchBar-"] + div > div > div[class*="channel-"]:nth-child(-n+5) svg {
+		display: none;
+	}
+	/* DIRECT MESSAGES */
+	div[class*="privateChannels-"] div[class*="searchBar-"] + div > div > header {
 		margin: 0;
-		border-radius: 0;
-		height: 24px;
 	}
-	div[class*="channels-"] div[class*="content-"] div[class*="name"] {
-		line-height: 24px;
+	/* private channel list entries */
+	div[class*="privateChannels-"] div[class*="channel-"] {
+		height: 38px;
+	}
+	div[class*="privateChannels-"] div[class*="channel-"] a {
+		border-radius: 0;
+		padding: 0 0 0 8px;
+		margin: 0;
+		height: 38px;
 	}
 }
