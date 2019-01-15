@@ -16,8 +16,8 @@
 	}
 	/* sender of actual chat messages */
 	.theme-light span[class*="username-"][role="button"] {
-		color: #444; /* not completely clack because bold */
 		font-weight: bold;
+		color: #444 /* not completely clack because bold, also no semicolon because group colors */
 	}
 
 
