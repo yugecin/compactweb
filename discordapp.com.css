@@ -19,6 +19,13 @@
 		font-weight: bold;
 		color: #444 /* not completely clack because bold, also no semicolon because group colors */
 	}
+	/* spoiler bullshit I guess (thx HoLLy) */
+	span[class*="spoilerText"] {
+		background: rgba(32, 34, 37, 0.5);
+	}
+	span[class*="spoilerText"] span[class*="inlineContent"] {
+		opacity: 1;
+	}
 
 
 /* channellist*/
