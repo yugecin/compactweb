@@ -16,6 +16,9 @@
 		padding: 2px 16px;
 		border-radius: 0;
 	}
+	.Box-body {
+		padding: 0;
+	}
 	.flash {
 		border-radius: 0;
 	}
@@ -43,11 +46,11 @@
 	.Counter::after {
 		content: ')';
 	}
-	.Header {
+	.Header,.Header-old {
 		padding: 0;
 	}
 	/* header stuff */
-	.pagehead {
+	.pagehead,.HeaderMenu {
 		margin-bottom: .4em;
 		padding-top: .4em;
 		border-bottom: 1px solid #000;
