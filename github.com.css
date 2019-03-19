@@ -9,6 +9,10 @@
 	body .mb-2 {
 		margin-bottom: 0;
 	}
+	.dashboard-sidebar {
+		padding-left: 1ex;
+		padding-right: 1ex;
+	}
 	.Box {
 		border-radius: 0;
 	}
@@ -16,7 +20,7 @@
 		padding: 2px 16px;
 		border-radius: 0;
 	}
-	.Box-body {
+	.markdown-body {
 		padding: 0;
 	}
 	.flash {
@@ -53,6 +57,8 @@
 	.pagehead,.HeaderMenu {
 		margin-bottom: .4em;
 		padding-top: .4em;
+	}
+	.pagehead {
 		border-bottom: 1px solid #000;
 	}
 	.repohead .repohead-details-container {
@@ -76,8 +82,7 @@
 	}
 	/* topics */
 	/*pull request branchnames*/.commit-ref,
-	/*userpage,organisationpage*/.topics-row-container .topic-tag,
-	/*repopage*/.list-topics-container .topic-tag {
+	.topic-tag {
 		background-color: #a7d3ff;
 		border-radius: 0;
 		padding: 0 .7em;
