@@ -225,4 +225,15 @@
 		border-radius: 0;
 		white-space: pre-wrap;
 	}
+	/*pull request commits, remove the INSANE padding*/
+	.TimelineItem,.commit-message {
+		line-height: 1;
+		padding: 0;
+	}
+	.TimelineItem-badge,.TimelineItem-body {
+		margin: 0;
+	}
+	.TimelineItem code a {
+		color: #000;
+	}
 }
