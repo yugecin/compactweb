@@ -92,6 +92,38 @@
 		padding-top: 0;
 		padding-bottom: 0;
 	}
+	.gadget + .gadget {
+		margin-top: 1em;
+	}
+	/*fucking shit*/
+	.gadget {
+		position: relative;
+		height: auto;
+		weight: auto;
+		top: initial;
+		left: initial;
+	}
+	.gadget-inline {
+		height: auto;
+	}
+	.rowHeader th {
+		color: #000;
+		padding: .2em .4em;
+		border-bottom: 0;
+	}
+	.aui thead, .aui tbody {
+		border-bottom: 1px solid #000;
+	}
+	.count-pagination {
+		padding: 0 .4em;
+	}
+	.aui tbody a {
+		color: #000;
+	}
+	.aui .status > span {
+		width: 100%;
+		border-radius: 0;
+	}
 /*backlog*/
 	#breadcrumbs-container {
 		margin: 0;
